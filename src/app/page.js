@@ -3,7 +3,16 @@ export default function Home() {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl font-bold leading-snug">Welcome</h1>
+      <h1 className="text-2xl font-bold leading-snug">
+        Personal Service in Hyderabad
+      </h1>
+      <p className="text-gray-600">
+        Available in Hyderabad including Gachibowli, Madhapur, and nearby areas.
+        Call or WhatsApp now for quick response.
+      </p>
+      <a href="/hyderabad" className="text-green-600 underline">
+        View Hyderabad Services
+      </a>
 
       <p className="text-gray-600 leading-relaxed">
         Professional personal service. Available for calls and messaging.

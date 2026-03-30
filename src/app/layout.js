@@ -1,9 +1,18 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "My Service | Personal Service",
+  title: "Personal Service in Hyderabad",
   description:
-    "Professional personal service available for calls and messaging. Fast, private, and reliable.",
+    "Professional personal service available in Hyderabad including Gachibowli, Madhapur, and Banjara Hills. Call and WhatsApp now.",
+  keywords: [
+    "service in Hyderabad",
+    "Hyderabad service",
+    "Gachibowli service",
+    "Madhapur service",
+    "Banjara Hills service"
+  ],
+};
+
 
   openGraph: {
     title: "My Service",
