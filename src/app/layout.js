@@ -13,13 +13,10 @@ export const metadata = {
     "Banjara Hills service"
   ],
 
-  verification:{
-    google:"I3HNEZOhu5CMtrb7DHHgd5olZThXFqeVoBXC94OnHPg"
+  verification: {
+    google: "I3HNEZOhu5CMtrb7DHHgd5olZThXFqeVoBXC94OnHPg",
   },
-
 };
-  
-
 
 
   openGraph: {
