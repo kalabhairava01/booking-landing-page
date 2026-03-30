@@ -13,7 +13,11 @@ export default function Home() {
       <a href="/hyderabad" className="text-green-600 underline">
         View Hyderabad Services
       </a>
+      <h2>Areas we serve</h2>
 
+      <a href="/hyderabad/madhapur">Madhapur Service</a>
+      <a href="/hyderabad/kondapur">Kondapur Service</a>
+      <a href="/hyderabad/gachibowli">Gachibowli Service</a>
       <p className="text-gray-600 leading-relaxed">
         Professional personal service. Available for calls and messaging.
       </p>
