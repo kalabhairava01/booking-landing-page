@@ -4,6 +4,7 @@ export const metadata = {
   title: "Personal Service in Hyderabad",
   description:
     "Professional personal service available in Hyderabad including Gachibowli, Madhapur, and Banjara Hills. Call and WhatsApp now.",
+
   keywords: [
     "service in Hyderabad",
     "Hyderabad service",
@@ -11,7 +12,14 @@ export const metadata = {
     "Madhapur service",
     "Banjara Hills service"
   ],
+
+  verification:{
+    google:"I3HNEZOhu5CMtrb7DHHgd5olZThXFqeVoBXC94OnHPg"
+  },
+
 };
+  
+
 
 
   openGraph: {
