@@ -13,12 +13,6 @@ export const metadata = {
     "Banjara Hills service"
   ],
 
-  verification: {
-    google: "I3HNEZOhu5CMtrb7DHHgd5olZThXFqeVoBXC94OnHPg",
-  },
-};
-
-
   openGraph: {
     title: "My Service",
     description:
@@ -46,6 +40,11 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+        <meta
+        name="google-site-verification"
+        content = "I3HNEZOhu5CMtrb7DHHgd5olZThXFqeVoBXC94OnHPg"/>
+      </head>
       <body className="bg-gray-50 text-gray-900">
         {/* Header */}
         <header className="p-4 bg-white shadow-sm sticky top-0 z-50">
