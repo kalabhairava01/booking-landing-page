@@ -5,10 +5,6 @@ export const metadata = {
   description:
     "Professional personal service available in Hyderabad including Gachibowli, Madhapur, and Banjara Hills. Call and WhatsApp now.",
 
-    verification: {
-    google: "I3HNEZOhu5CMtrb7DHHgd5olZThXFqeVoBXC94OnHPg",
-  },
-
   keywords: [
     "service in Hyderabad",
     "Hyderabad service",
