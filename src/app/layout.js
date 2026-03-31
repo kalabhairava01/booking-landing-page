@@ -42,23 +42,40 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta
-        name="google-site-verification"
-        content = "I3HNEZOhu5CMtrb7DHHgd5olZThXFqeVoBXC94OnHPg"/>
+          name="google-site-verification"
+          content="I3HNEZOhu5CMtrb7DHHgd5olZThXFqeVoBXC94OnHPg"
+        />
       </head>
-      <body className="bg-gray-50 text-gray-900">
+      <body className="bg-black text-white">
         {/* Header */}
-        <header className="p-4 bg-white shadow-sm sticky top-0 z-50">
-          <div className="flex justify-between items-center max-w-md mx-auto">
-            <h2 className="text-lg font-bold tracking-wide">My Service</h2>
 
-            <nav className="flex gap-4 text-sm font-medium">
-              <a href="/" className="hover:text-green-600 transition ">
+        <header className="p-4 bg-black/90 backdrop-blur border-b border-gray-800 sticky top-0 z-50">
+          <div className="flex justify-between items-center max-w-md mx-auto">
+            {/* Logo */}
+            <h2 className="text-lg font-bold tracking-wide text-green-400">
+              My Service
+            </h2>
+
+            {/* Navigation */}
+            <nav className="flex gap-4 text-sm font-medium text-gray-300">
+              <a
+                href="/"
+                className="hover:text-green-400 transition duration-200"
+              >
                 Home
               </a>
-              <a href="/about" className="hover:text-green-600 transition">
+
+              <a
+                href="/about"
+                className="hover:text-green-400 transition duration-200"
+              >
                 About
               </a>
-              <a href="/services" className="hover:text-green-600">
+
+              <a
+                href="/services"
+                className="hover:text-green-400 transition duration-200"
+              >
                 Services
               </a>
             </nav>
@@ -88,6 +105,16 @@ export default function RootLayout({ children }) {
             className="w-1/2 text-center py-4 bg-black text-white font-semibold active:scale-95 transition duration-150"
           >
             WhatsApp
+          </a>
+
+          <a
+            href="https://wa.me/916203501601"
+            className="fixed bottom-20 right-4 z-50"
+          >
+            <img
+              src="images/whatsapp.jpeg"
+              className="w-14 h-14 hover:scale-110 transition rounded-2xl"
+            />
           </a>
         </div>
       </body>

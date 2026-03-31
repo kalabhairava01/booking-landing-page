@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pt-16">
       <h1 className="text-2xl font-bold">Services</h1>
 
       <p className="text-gray-600">
