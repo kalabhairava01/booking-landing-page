@@ -31,12 +31,8 @@ export const metadata = {
   },
 };
 
-
-
-
-
 export default function RootLayout({ children }) {
-  const phone = "916203501601";
+  const phone = "918709045174";
 
   return (
     <html lang="en">
@@ -108,7 +104,7 @@ export default function RootLayout({ children }) {
           </a>
 
           <a
-            href="https://wa.me/916203501601"
+            href="https://wa.me/918709045174"
             className="fixed bottom-20 right-4 z-50"
           >
             <img
