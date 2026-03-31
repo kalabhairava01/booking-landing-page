@@ -44,7 +44,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-black text-white min-h-screen px-4 pt-2 pb-5 ">
+    <div className="bg-black text-white min-h-screen px-4 pt-2 pb-20 ">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -191,6 +191,26 @@ export default function Home() {
           WhatsApp
         </a>
       </div>
+
+        {/* sticky bottom bar */}
+
+      <div className="fixed bottom-0 left-0 w-full flex z-50">
+        <a
+          href="tel:8709045174"
+          className="w-1/2 bg-green-600 text-white text-center py-3 font-semibold"
+        >
+          Call Now
+        </a>
+
+        <a
+          href="https://wa.me/8709045174"
+          className="w-1/2 bg-black text-white text-center py-3 font-semibold border-l border-gray-700"
+        >
+          WhatsApp
+        </a>
+      </div>
+
+      {/* footer */}
 
       <footer className="mt-12 border-t border-gray-800 pt-6 text-center text-gray-400 text-sm">
         <p>© 2026 Personal Service Hyderabad. All rights reserved.</p>
