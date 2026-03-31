@@ -5,12 +5,16 @@ export const metadata = {
   description:
     "Professional personal service available in Hyderabad including Gachibowli, Madhapur, and Banjara Hills. Call and WhatsApp now.",
 
+    verification: {
+    google: "I3HNEZOhu5CMtrb7DHHgd5olZThXFqeVoBXC94OnHPg",
+  },
+
   keywords: [
     "service in Hyderabad",
     "Hyderabad service",
     "Gachibowli service",
     "Madhapur service",
-    "Banjara Hills service"
+    "Banjara Hills service",
   ],
 
   openGraph: {
@@ -36,12 +40,6 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="google-site-verification"
-          content="I3HNEZOhu5CMtrb7DHHgd5olZThXFqeVoBXC94OnHPg"
-        />
-      </head>
 
       <body className="bg-black text-white">
         {/* Header */}
