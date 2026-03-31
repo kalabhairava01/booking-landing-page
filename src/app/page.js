@@ -38,16 +38,16 @@ export default function Home() {
         Professional personal service. Available for calls and messaging.
       </p>
 
-      <div className="bg-green-50 p-4 rounded-xl text-center">
-        <p className="text-sm text-gray-700">
-          Available now for calls and WhatsApp. Quick response guaranteed.
-        </p>
+      {/* Info Box */}
+      <div className="bg-gray-800 p-4 rounded-xl text-center text-gray-300 mb-4">
+        Available now for calls and WhatsApp. Quick response guaranteed.
       </div>
 
-      {/* Services */}
-      <div className="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition">
-        <h2 className="font-semibold text-lg mb-2">Services</h2>
-        <ul className="list-disc pl-5 text-gray-600 space-y-1">
+      {/* Services Card */}
+      <div className="bg-gray-900 p-5 rounded-xl">
+        <h2 className="text-lg font-semibold mb-3">Services</h2>
+
+        <ul className="list-disc ml-5 text-gray-300 space-y-2">
           <li>Private meet</li>
           <li>Call service</li>
           <li>Messaging</li>
