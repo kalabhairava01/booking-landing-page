@@ -21,7 +21,7 @@ export const metadata = {
     title: "My Service",
     description:
       "Professional personal service available for calls and messaging.",
-    url: "https://example.com", // change later
+    url: "https://booking-landing-page-psi.vercel.app", // change later
     siteName: "My Service",
     images: [
       {
