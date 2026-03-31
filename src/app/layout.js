@@ -42,6 +42,7 @@ export default function RootLayout({ children }) {
           content="I3HNEZOhu5CMtrb7DHHgd5olZThXFqeVoBXC94OnHPg"
         />
       </head>
+
       <body className="bg-black text-white">
         {/* Header */}
 
