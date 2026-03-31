@@ -1,4 +1,11 @@
 "use client";
+
+export const metadata = {
+  title: "Hyderabad Escort Service | Call & WhatsApp Now",
+  description:
+    "Hyderabad escort service available in Gachibowli, Madhapur and nearby areas. Call and WhatsApp now for instant service.",
+};
+
 import { motion } from "framer-motion";
 export default function Home() {
   const images = [
@@ -45,6 +52,8 @@ export default function Home() {
 
   return (
     <div className="bg-black text-white min-h-screen px-4 pt-2 pb-20 ">
+      <h1>Hyderabad Escort Service</h1>
+      <h2>Gachibowli Escort Service</h2>
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -192,7 +201,7 @@ export default function Home() {
         </a>
       </div>
 
-        {/* sticky bottom bar */}
+      {/* sticky bottom bar */}
 
       <div className="fixed bottom-0 left-0 w-full flex z-50">
         <a
