@@ -1,17 +1,47 @@
-export function generateMetadata({ params }) {
-const raw = params?.area || "";
 
-const area = raw.replace("-escort-service", "").replace(/-/g, " ");
+export function generateMetadata({ params }) {
+  const raw = params?.area || "";
+
+  const area = raw.replace("-escort-service", "").replace(/-/g, " ");
 
   return {
     title: `${area} Escort Service | Call Now`,
-    description: `Best escort service in ${area}. Available 24/7. Call and WhatsApp now.`,
+    description: `Best escort service in ${area}. Available 24/7 with fast response and privacy.`,
   };
 }
+
+
+
 export default function AreaPage({ params }) {
   const raw = params?.area || "";
 
   const area = raw.replace("-escort-service", "").replace(/-/g, " ");
+  const variations = [
+    "premium companionship service",
+    "high profile escort service",
+    "professional personal service",
+    "exclusive private service",
+  ];
+  
+
+  const randomText = variations[Math.floor(Math.random() * variations.length)];
+
+  const areaContent = {
+    "gachibowli escort service":
+      "Best service near IT hubs, hotels and corporate areas in Gachibowli.",
+
+    "madhapur escort service":
+      "Available near Hitech City, premium hotels and nightlife areas in Madhapur.",
+
+    "kondapur escort service":
+      "Fast and reliable service in residential and hotel areas of Kondapur.",
+
+    "banjara hills escort service":
+      "Exclusive service in luxury hotels and VIP areas of Banjara Hills.",
+
+    "jubilee hills escort service":
+      "Premium service available in high-profile areas of Jubilee Hills.",
+  };
 
   return (
     <div className="bg-black text-white min-h-screen p-4 space-y-6">
@@ -21,10 +51,10 @@ export default function AreaPage({ params }) {
       </h1>
 
       {/* INTRO */}
+
       <p className="text-gray-400 text-sm">
-        Looking for a reliable and confidential escort service in {area}? We
-        provide premium companionship services with quick response, ensuring
-        privacy, comfort, and satisfaction.
+        We provide {randomText} in {area} with 24/7 availability, fast response
+        and complete privacy.
       </p>
 
       {/* INFO BOX */}
@@ -65,11 +95,50 @@ export default function AreaPage({ params }) {
       </div>
 
       {/* EXTRA TEXT (SEO BOOST) */}
+
       <p className="text-gray-500 text-sm">
-        We are one of the most trusted escort services in {area}, offering
-        high-quality companionship with complete privacy. Contact us now for
-        instant booking and premium experience.
+        {areaContent[`${area} escort service`] ||
+          `Trusted escort service available across ${area} with full privacy and quick response.`}
       </p>
+
+      {/* 🔥 Internal Links */}
+      <div className="mt-6">
+        <h2 className="text-lg font-semibold mb-2">Explore More Areas</h2>
+
+        <div className="space-y-1 text-sm">
+          <a href="/hyderabad" className="block text-green-400">
+            Hyderabad Escort Service
+          </a>
+
+          <a href="/gachibowli-escort-service" className="block text-green-400">
+            Gachibowli Escort Service
+          </a>
+
+          <a href="/madhapur-escort-service" className="block text-green-400">
+            Madhapur Escort Service
+          </a>
+
+          <a href="/kondapur-escort-service" className="block text-green-400">
+            Kondapur Escort Service
+          </a>
+
+          <a
+            href="/jubilee-hills-escort-service"
+            className="block text-green-400"
+          >
+            Jubilee Hills Escort Service
+          </a>
+          <a
+            href="/banjara-hills-escort-service"
+            className="block text-green-400"
+          >
+            Banjara Hills Escort Service
+          </a>
+          <a href="/hitech-city-escort-service" className="block text-green-400">
+            Hitech City Escort Service
+          </a>
+        </div>
+      </div>
     </div>
   );
   

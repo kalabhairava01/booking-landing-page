@@ -91,27 +91,38 @@ export default function HomeClient() {
         and satisfaction guaranteed.
       </p>
 
-      {/* AREAS */}
-      <div>
-        <h2 className="text-lg font-semibold mb-2">Areas We Serve</h2>
-      </div>
-        {/* Auto page adding */}
-      <div className="space-y-2">
-        <a href="/gachibowli" className="block text-green-400">
-          Gachibowli Escort Service
-        </a>
 
-        <a href="/madhapur" className="block text-green-400">
-          Madhapur Escort Service
-        </a>
+      {/* 🔥 SEO AREA LINKS */}
+      <div className="mt-6">
+        <h2 className="text-lg font-semibold mb-3">
+          Areas We Serve in Hyderabad
+        </h2>
 
-        <a href="/kondapur" className="block text-green-400">
-          Kondapur Escort Service
-        </a>
+        <div className="grid grid-cols-2 gap-2 text-sm">
+          <a href="/gachibowli-escort-service" className="text-green-400">
+            Gachibowli Escort Service
+          </a>
 
-        <a href="/banjara-hills" className="block text-green-400">
-          Banjara Hills Escort Service
-        </a>
+          <a href="/madhapur-escort-service" className="text-green-400">
+            Madhapur Escort Service
+          </a>
+
+          <a href="/kondapur-escort-service" className="text-green-400">
+            Kondapur Escort Service
+          </a>
+
+          <a href="/banjara-hills-escort-service" className="text-green-400">
+            Banjara Hills Escort Service
+          </a>
+
+          <a href="/jubilee-hills-escort-service" className="text-green-400">
+            Jubilee Hills Escort Service
+          </a>
+
+          <a href="/hitech-city-escort-service" className="text-green-400">
+            Hitech City Escort Service
+          </a>
+        </div>
       </div>
 
       {/* INFO */}
