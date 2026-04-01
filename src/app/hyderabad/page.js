@@ -41,6 +41,13 @@ export default function Hyderabad() {
           Madhapur, Kondapur and nearby areas. Available 24/7 with quick
           response.
         </p>
+        <h1>Hyderabad Escort Service</h1>
+
+        <p>
+          Best escort service in Hyderabad covering Gachibowli, Madhapur,
+          Kondapur, Banjara Hills and nearby areas. Available 24/7 with fast
+          response.
+        </p>
 
         <p className="text-gray-600">
           Available in Hyderabad for calls and messaging. Quick response and

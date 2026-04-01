@@ -5,8 +5,8 @@ export function generateMetadata({ params }) {
   const area = raw.replace("-escort-service", "").replace(/-/g, " ");
 
   return {
-    title: `${area} Escort Service | Call Now`,
-    description: `Best escort service in ${area}. Available 24/7 with fast response and privacy.`,
+    title: `${area} Escort Service ❤️ 24/7 Call Now | WhatsApp Available`,
+    description: `Best escort service in ${area}. Available 24/7 with instant booking. Call or WhatsApp now for fast and private service.`,
   };
 }
 
@@ -49,12 +49,25 @@ export default function AreaPage({ params }) {
       <h1 className="text-2xl font-bold text-green-400">
         {area} Escort Service
       </h1>
+      <p className="text-green-400 text-sm mt-2">
+        🔥 Available Now | Quick Response | 100% Privacy
+      </p>
+
+      <img
+        src="/images/1.jpeg"
+        alt={`${area} escort service Hyderabad`}
+        className="rounded-xl mt-3 w-full"
+      />
 
       {/* INTRO */}
 
       <p className="text-gray-400 text-sm">
         We provide {randomText} in {area} with 24/7 availability, fast response
         and complete privacy.
+      </p>
+      <p className="text-gray-500 text-sm mt-3">
+        ✔ Trusted by clients across Hyderabad ✔ Fast response within minutes ✔
+        Safe and confidential service
       </p>
 
       {/* INFO BOX */}
@@ -76,6 +89,12 @@ export default function AreaPage({ params }) {
         enjoyable experience. Whether you're looking for companionship for a
         private meeting or a special occasion, we are here to assist you.
       </p>
+
+      <img
+        src="/images/2.jpeg"
+        alt={`${area} call girls service`}
+        className="rounded-xl mt-4 w-full"
+      />
 
       {/* CTA BUTTONS */}
       <div className="flex gap-3">
@@ -134,7 +153,10 @@ export default function AreaPage({ params }) {
           >
             Banjara Hills Escort Service
           </a>
-          <a href="/hitech-city-escort-service" className="block text-green-400">
+          <a
+            href="/hitech-city-escort-service"
+            className="block text-green-400"
+          >
             Hitech City Escort Service
           </a>
         </div>
