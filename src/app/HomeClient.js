@@ -94,18 +94,24 @@ export default function HomeClient() {
       {/* AREAS */}
       <div>
         <h2 className="text-lg font-semibold mb-2">Areas We Serve</h2>
+      </div>
+        {/* Auto page adding */}
+      <div className="space-y-2">
+        <a href="/gachibowli" className="block text-green-400">
+          Gachibowli Escort Service
+        </a>
 
-        <div className="space-y-1 text-sm">
-          <a href="/hyderabad/madhapur" className="block text-green-400">
-            Madhapur Service
-          </a>
-          <a href="/hyderabad/kondapur" className="block text-green-400">
-            Kondapur Service
-          </a>
-          <a href="/hyderabad/gachibowli" className="block text-green-400">
-            Gachibowli Service
-          </a>
-        </div>
+        <a href="/madhapur" className="block text-green-400">
+          Madhapur Escort Service
+        </a>
+
+        <a href="/kondapur" className="block text-green-400">
+          Kondapur Escort Service
+        </a>
+
+        <a href="/banjara-hills" className="block text-green-400">
+          Banjara Hills Escort Service
+        </a>
       </div>
 
       {/* INFO */}
@@ -137,7 +143,10 @@ export default function HomeClient() {
             transition={{ delay: index * 0.2 }}
             className="bg-gradient-to-b from-gray-900 to-black rounded-2xl overflow-hidden shadow-lg"
           >
-            <img src={p.img} className="w-full h-auto object-content bg-black" />
+            <img
+              src={p.img}
+              className="w-full h-auto object-content bg-black"
+            />
 
             <div className="p-4">
               <h3 className="text-lg font-semibold">{p.name}</h3>
