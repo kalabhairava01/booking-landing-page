@@ -45,12 +45,19 @@ export default function HomeClient() {
         className="text-center"
       >
         <h1 className="text-3xl md:text-4xl font-bold text-green-400">
-          Personal Service in Hyderabad
+         Escort service Hyderabad
         </h1>
         <p className="text-gray-400 mt-2 text-sm pb-2 pt-2">
-          Available 24/7 in Gachibowli, Madhapur, Kondapur
+          Call girls Available 24/7 in Gachibowli, Madhapur, Kondapur
         </p>
       </motion.div>
+
+      <h2 className="text-xl font-semibold mt-6">Hyderabad Escort Service</h2>
+
+      <p className="text-gray-400 text-sm">
+        We provide premium escort service in Hyderabad including Gachibowli,
+        Madhapur, Kondapur and nearby areas. Available 24/7 with fast response.
+      </p>
 
       {/* MAIN TITLE */}
       <h2 className="text-xl font-semibold leading-snug pb-4">
@@ -90,7 +97,6 @@ export default function HomeClient() {
         Our escort service ensures a safe and enjoyable experience with privacy
         and satisfaction guaranteed.
       </p>
-
 
       {/* 🔥 SEO AREA LINKS */}
       <div className="mt-6">
