@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Personal Service in Hyderabad",
+  title: " Escort Service in Hyderabad",
   description:
     "Professional personal service available in Hyderabad including Gachibowli, Madhapur, and Banjara Hills. Call and WhatsApp now.",
 

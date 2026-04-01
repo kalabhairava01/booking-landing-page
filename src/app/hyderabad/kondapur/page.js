@@ -1,12 +1,18 @@
 export const metadata = {
-  title: "Service in kondapur Hyderabad",
+  title: "Service in Kondapur Hyderabad | Call & WhatsApp Now",
   description:
-    "Professional service available in Gachibowli Hyderabad. Call and WhatsApp now.",
-};
+    "Professional service available in Kondapur Hyderabad. 24x7 service, quick response and booking available.", };
+
 
 export default function Kondapur() {
   return (
     <div className="space-y-4">
+      <h1 className="text-2xl font-bold">Service in Gachibowli Hyderabad</h1>
+
+      <p className="text-gray-400 mt-2">
+        Professional service available in Gachibowli, Hyderabad. Contact now for
+        fast booking and response.
+      </p>
       <h1 className="text-2xl font-bold">Service in Kondapur</h1>
 
       <p className="text-gray-600">
