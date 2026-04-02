@@ -7,34 +7,45 @@ export default function HomeClient() {
     {
       img: "/images/1.jpeg",
       name: "Aisha",
+      slug: "aisha-gachibowli",
       desc: "Friendly and professional companion in Gachibowli",
     },
     {
       img: "/images/2.jpeg",
       name: "Riya",
+      slug: "riya-madhapur",
       desc: "Available for private meetings and events",
     },
     {
       img: "/images/11.jpeg",
       name: "Naira",
-      desc: "",
+      slug: "naira-kondapur",
+      desc: "Premium service in Kondapur",
     },
     {
       img: "/images/4.jpeg",
       name: "Mahak Sharma",
+      slug: "mahak-sharma-banjara-hills",
+
       desc: "Exclusive service in Banjara Hills and Jubilee Hills",
     },
     {
       img: "/images/5.jpeg",
       name: "Shivani",
+      slug: "shivani-gachibowli",
       desc: "Premium service in Gachibowli and Banjara Hills",
     },
     {
       img: "/images/6.jpeg",
       name: "Ananya",
+      slug: "ananya-madhapur",
+
       desc: "Premium service in Madhapur and Kondapur",
     },
   ];
+
+  
+
 
   return (
     <div className="bg-black text-white min-h-screen px-4 pt-4 pb-32 ">
@@ -45,7 +56,7 @@ export default function HomeClient() {
         className="text-center"
       >
         <h1 className="text-3xl md:text-4xl font-bold text-green-400">
-         Escort service Hyderabad
+          Escort service Hyderabad
         </h1>
         <p className="text-gray-400 mt-2 text-sm pb-2 pt-2">
           Call girls Available 24/7 in Gachibowli, Madhapur, Kondapur
@@ -207,6 +218,42 @@ export default function HomeClient() {
         >
           WhatsApp
         </a>
+      </div>
+
+      {/* 🔥 PROFILE SECTION */}
+      <h2 className="text-xl font-semibold mt-8 mb-4">Featured Profiles</h2>
+
+      {/* PROFILE CARD */}
+
+      <div className="flex flex-col gap-6">
+        {profiles.map((p, i) => (
+          <a
+            key={i}
+            href={`/profile/${p.slug}`}
+            className="bg-gray-900 rounded-xl overflow-hidden"
+          >
+            <img
+              src={p.img}
+              alt={p.name}
+              className="w-full h-64 object-content"
+            />
+
+            <div className="p-4">
+              <h3 className="text-lg font-semibold">{p.name}</h3>
+
+              <p className="text-gray-400 text-sm">{p.desc}</p>
+
+              <div className="flex gap-3 mt-3">
+                <span className="w-1/2 bg-green-600 text-center py-2 rounded-lg text-sm">
+                  Call
+                </span>
+                <span className="w-1/2 bg-white text-black text-center py-2 rounded-lg text-sm">
+                  WhatsApp
+                </span>
+              </div>
+            </div>
+          </a>
+        ))}
       </div>
 
       {/* FOOTER */}

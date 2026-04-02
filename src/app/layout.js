@@ -37,7 +37,6 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-
       <body className="bg-black text-white">
         {/* Header */}
 
@@ -84,7 +83,7 @@ export default function RootLayout({ children }) {
 
         {/* Sticky Bottom Bar */}
 
-        <div className="fixed bottom-0 left-0 w-full flex shadow-lg">
+        <div className="fixed bottom-0 left-0 w-full flex z-[9999]">
           <a
             href={`tel:${phone}`}
             className="w-1/2 text-center py-4 bg-green-600 text-white font-semibold active:scale-95 transition duration-150"
@@ -104,11 +103,12 @@ export default function RootLayout({ children }) {
             className="fixed bottom-20 right-4 z-50"
           >
             <img
-              src="images/whatsapp.jpeg"
+              src="/images/whatsapp.jpeg"
               className="w-14 h-14 hover:scale-110 transition rounded-2xl"
             />
           </a>
         </div>
+        
       </body>
     </html>
   );
