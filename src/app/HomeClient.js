@@ -269,6 +269,14 @@ export default function HomeClient() {
         <p className="mt-3 text-xs text-gray-500">
           Trusted platform offering premium companionship services in Hyderabad.
         </p>
+
+        <p className="text-gray-500 text-sm mt-6">
+          This platform is managed by a trusted local service provider in
+          Hyderabad, offering verified and professional companionship services
+          with complete privacy and safety.
+        </p>
+
+        
       </footer>
     </div>
   );

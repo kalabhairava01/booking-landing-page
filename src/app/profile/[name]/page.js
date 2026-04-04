@@ -65,6 +65,19 @@ export default async function ProfilePage({ params }) {
           <li>✔ Friendly Experience</li>
         </ul>
       </div>
+      <p className="text-gray-400 mt-3">
+        Our goal is to provide a safe, respectful and confidential experience
+        for clients looking for companionship in Hyderabad.
+      </p>
+      <div className="bg-gray-900 p-4 rounded-xl mt-4">
+        <h3 className="text-lg font-semibold mb-2">How It Works</h3>
+        <ul className="text-sm text-gray-300 space-y-1">
+          <li>✔ Choose profile</li>
+          <li>✔ Contact via WhatsApp</li>
+          <li>✔ Confirm details privately</li>
+          <li>✔ Enjoy safe service</li>
+        </ul>
+      </div>
     </div>
   );
 }
