@@ -1,8 +1,11 @@
 
-export function generateMetadata({ params }) {
-  const raw = params?.area || "";
+export async function generateMetadata({ params }) {
 
-  const area = raw.replace("-escort-service", "").replace(/-/g, " ");
+  const resolvedParams = await params;
+  const raw = resolvedParams?.area || "";
+  const area = raw
+  .replace("-escort-service", "")
+  .replace(/-/g, " ");
 
   return {
     title: `${area} Escort Service ❤️ 24/7 Call Now | WhatsApp Available`,
@@ -12,10 +15,14 @@ export function generateMetadata({ params }) {
 
 
 
-export default function AreaPage({ params }) {
-  const raw = params?.area || "";
+export default async function AreaPage({ params }) {
 
-  const area = raw.replace("-escort-service", "").replace(/-/g, " ");
+  const resolvedParams = await params;
+  const raw = resolvedParams?.area || "";
+
+   const area = raw
+   .replace("-escort-service", "")
+   .replace(/-/g, " ");
   const variations = [
     "premium companionship service",
     "high profile escort service",
@@ -23,7 +30,6 @@ export default function AreaPage({ params }) {
     "exclusive private service",
   ];
   
-
   const randomText = variations[Math.floor(Math.random() * variations.length)];
 
   const areaContent = {

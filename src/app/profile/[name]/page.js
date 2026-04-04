@@ -1,23 +1,45 @@
-const profiles = [
-  {
-    slug: "aisha-gachibowli",
-    name: "Aisha",
-    img: "/images/1.jpeg",
-    desc: "Friendly and professional companion in Gachibowli",
-  },
-  {
-    slug: "riya-madhapur",
-    name: "Riya",
-    img: "/images/2.jpeg",
-    desc: "Available for private meetings and events",
-  },
-  {
-    slug: "naira-kondapur",
-    name: "Naira",
-    img: "/images/11.jpeg",
-    desc: "Premium service in Kondapur",
-  },
-];
+
+import { a } from "framer-motion/client";
+
+  const profiles = [
+    {
+      slug: "aisha-gachibowli",
+
+      name: "Aisha",
+
+      img: "/images/1.jpeg",
+
+      area: "Gachibowli",
+
+      desc: "Friendly and professional companion in Gachibowli",
+    },
+
+    {
+      slug: "riya-madhapur",
+
+      name: "Riya",
+
+      area: "Madhapur",
+
+      img: "/images/2.jpeg",
+
+      desc: "Available for private meetings and events",
+    },
+
+    {
+      slug: "naira-kondapur",
+
+      name: "Naira",
+
+      img: "/images/11.jpeg",
+
+      area: "Kondapur",
+
+      desc: "Premium service in Kondapur",
+    },
+  ];
+
+
 // meta data
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -32,6 +54,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function ProfilePage({ params }) {
+
   const resolvedParams = await params;
   const slug = resolvedParams?.name || "";
 
@@ -81,6 +104,3 @@ export default async function ProfilePage({ params }) {
     </div>
   );
 }
-  
-
-
