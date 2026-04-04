@@ -81,6 +81,27 @@ export default async function ProfilePage({ params }) {
 
       <p className="text-gray-400 mt-3">{profile.desc}</p>
 
+      <p className="text-gray-500 mt-3 text-sm leading-relaxed">
+        Looking for premium escort service in Hyderabad? {profile.name} is
+        available for private meetings, hotel visits and home service. Enjoy a
+        safe, confidential and professional experience with quick response on
+        call and WhatsApp.
+      </p>
+
+      <p className="text-gray-500 mt-2 text-sm">
+        ✔ 24/7 Available ✔ Verified Profile ✔ Safe & Private Service
+      </p>
+      <div className="mt-4">
+        <a href="/hyderabad" className="text-green-400 underline text-sm">
+          View Hyderabad Escort Services
+        </a>
+      </div>
+      <p className="text-gray-500 mt-4 text-sm">
+        Our escort service platform connects you with trusted and verified
+        profiles across Hyderabad including Gachibowli, Madhapur and Kondapur.
+        Book now for a premium experience.
+      </p>
+
       <div className="bg-gray-900 p-4 rounded-xl mt-4">
         <ul className="text-sm text-gray-300 space-y-1">
           <li>✔ 24/7 Available</li>
