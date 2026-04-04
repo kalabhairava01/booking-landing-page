@@ -23,6 +23,26 @@ const areas = [
   "mehdipatnam-escort-service",
 ];
 
+const types = [
+  "escort-service",
+  "call-girls",
+  "independent-escort",
+  "vip-escort",
+];
+
+const urls = [];
+
+areas.forEach((area) => {
+  types.forEach((type) => {
+    urls.push({
+      url: `${baseUrl}/${area}-${type}`,
+      lastModified: new Date(),
+    });
+  });
+});
+
+
+
 export default function sitemap() {
   const baseUrl = "https://booking-landing-page-psi.vercel.app";
 

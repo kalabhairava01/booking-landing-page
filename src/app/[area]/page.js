@@ -3,13 +3,17 @@ export async function generateMetadata({ params }) {
 
   const resolvedParams = await params;
   const raw = resolvedParams?.area || "";
-  const area = raw
+  const clean = raw
   .replace("-escort-service", "")
+   .replace("-call-girls", "")
+  .replace("-independent-escort", "")
+  .replace("-vip-escort", "")
   .replace(/-/g, " ");
 
+
   return {
-    title: `${area} Escort Service ❤️ 24/7 Call Now | WhatsApp Available`,
-    description: `Best escort service in ${area}. Available 24/7 with instant booking. Call or WhatsApp now for fast and private service.`,
+    title: `${clean} Escort Service ❤️ 24/7 Call Now | WhatsApp Available`,
+    description: `Best escort service in ${clean}. Available 24/7 with instant booking. Call or WhatsApp now for fast and private service.`,
   };
 }
 
@@ -20,9 +24,12 @@ export default async function AreaPage({ params }) {
   const resolvedParams = await params;
   const raw = resolvedParams?.area || "";
 
-   const area = raw
-   .replace("-escort-service", "")
-   .replace(/-/g, " ");
+   const clean = raw
+     .replace("-escort-service", "")
+     .replace("-call-girls", "")
+     .replace("-independent-escort", "")
+     .replace("-vip-escort", "")
+     .replace(/-/g, " ");
   const variations = [
     "premium companionship service",
     "high profile escort service",
@@ -53,7 +60,7 @@ export default async function AreaPage({ params }) {
     <div className="bg-black text-white min-h-screen p-4 space-y-6">
       {/* TITLE */}
       <h1 className="text-2xl font-bold text-green-400">
-        {area} Escort Service
+        {clean} Escort Service
       </h1>
       <p className="text-green-400 text-sm mt-2">
         🔥 Available Now | Quick Response | 100% Privacy
@@ -61,14 +68,14 @@ export default async function AreaPage({ params }) {
 
       <img
         src="/images/1.jpeg"
-        alt={`${area} escort service Hyderabad`}
+        alt={`${clean} escort service Hyderabad`}
         className="rounded-xl mt-3 w-full"
       />
 
       {/* INTRO */}
 
       <p className="text-gray-400 text-sm">
-        We provide {randomText} in {area} with 24/7 availability, fast response
+        We provide {randomText} in {clean} with 24/7 availability, fast response
         and complete privacy.
       </p>
       <p className="text-gray-500 text-sm mt-3">
@@ -78,7 +85,7 @@ export default async function AreaPage({ params }) {
 
       {/* INFO BOX */}
       <div className="bg-gray-900 p-4 rounded-xl">
-        <h2 className="font-semibold mb-2">Our Services in {area}</h2>
+        <h2 className="font-semibold mb-2">Our Services in {clean}</h2>
 
         <ul className="text-gray-300 text-sm space-y-1">
           <li>✔ 24/7 Service Available</li>
@@ -91,14 +98,14 @@ export default async function AreaPage({ params }) {
 
       {/* DESCRIPTION */}
       <p className="text-gray-400 text-sm">
-        Our escort service in {area} is designed to provide you with a safe and
+        Our escort service in {clean} is designed to provide you with a safe and
         enjoyable experience. Whether you're looking for companionship for a
         private meeting or a special occasion, we are here to assist you.
       </p>
 
       <img
         src="/images/2.jpeg"
-        alt={`${area} call girls service`}
+        alt={`${clean} call girls service`}
         className="rounded-xl mt-4 w-full"
       />
 
@@ -122,8 +129,8 @@ export default async function AreaPage({ params }) {
       {/* EXTRA TEXT (SEO BOOST) */}
 
       <p className="text-gray-500 text-sm">
-        {areaContent[`${area} escort service`] ||
-          `Trusted escort service available across ${area} with full privacy and quick response.`}
+        {areaContent[`${clean} escort service`] ||
+          `Trusted escort service available across ${clean} with full privacy and quick response.`}
       </p>
 
       {/* 🔥 Internal Links */}
@@ -131,6 +138,34 @@ export default async function AreaPage({ params }) {
         <h2 className="text-lg font-semibold mb-2">Explore More Areas</h2>
 
         <div className="space-y-1 text-sm">
+          {/* 🔥 Service Type Links (VERY IMPORTANT SEO) */}
+          <div className="mt-6">
+            <h2 className="text-lg font-semibold mb-2">Explore Services</h2>
+
+            <div className="space-y-1 text-sm">
+              <a
+                href={`/${raw.replace("escort-service", "call-girls")}`}
+                className="block text-green-400"
+              >
+                {clean} Call Girls
+              </a>
+
+              <a
+                href={`/${raw.replace("escort-service", "independent-escort")}`}
+                className="block text-green-400"
+              >
+                {clean} Independent Escort
+              </a>
+
+              <a
+                href={`/${raw.replace("escort-service", "vip-escort")}`}
+                className="block text-green-400"
+              >
+                {clean} VIP Escort
+              </a>
+            </div>
+          </div>
+
           <a href="/hyderabad" className="block text-green-400">
             Hyderabad Escort Service
           </a>
