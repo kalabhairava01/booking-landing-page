@@ -44,9 +44,6 @@ export default function HomeClient() {
     },
   ];
 
-  
-
-
   return (
     <div className="bg-black text-white min-h-screen px-4 pt-4 pb-32 ">
       {/* HERO */}
@@ -275,8 +272,6 @@ export default function HomeClient() {
           Hyderabad, offering verified and professional companionship services
           with complete privacy and safety.
         </p>
-
-        
       </footer>
     </div>
   );
